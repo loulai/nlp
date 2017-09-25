@@ -1,8 +1,7 @@
 import nltk
 simple_grammar_2 = nltk.CFG.fromstring("""
 	S -> NP VP
-	NP -> NP PP
-	NP -> DT JJ NNS PP | DT NN NN
+	NP -> NP PP | DT JJ NNS PP | DT NN NN
 	PP -> IN DT NN | VBP NP
 	DT -> 'any' | 'the'
 	JJ -> 'habitable'
