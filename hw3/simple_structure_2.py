@@ -1,5 +1,6 @@
 import nltk
 simple_grammar_2 = nltk.CFG.fromstring("""
+	
 	NP -> NP PP
 	NP -> DT JJ NNS PP
 	PP -> IN DT NN
