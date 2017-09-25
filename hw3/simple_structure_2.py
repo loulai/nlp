@@ -6,11 +6,14 @@ simple_grammar_2 = nltk.CFG.fromstring("""
 	DT -> 'any' | 'the'
 	JJ -> 'habitable'
 	NNS -> 'areas'
-	IN -> 'on'
 	NN -> 'planet' | 'border' | 'region'
+	IN -> 'on'
+	
 
 	VP -> VBP PP
 	VBP -> 'are' | 'in'
+
+	
 	""")
 
 simple_sentence_2 = ['any', 'habitable', 'areas', 'on','the','planet','are', 'in', 'the', 'border', 'region']
